@@ -1,0 +1,366 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:link:last-of-type {
+  color: #009682;
+}
+
+.page{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Indie Flower";
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+/* ------------------------------------------------------- */
+/* Menu customization #1 */
+header {
+  width: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  font-size: 10px;
+  font-weight: 900;
+  color: white;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  background-color: #009682;
+}
+
+.menu > li {
+  list-style-type: none;
+  width: 20%;
+  margin: auto;
+  display: inline;
+}
+
+.menu > li:first-of-type, .menu > li:last-of-type {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+li span{
+  color: white;
+}
+/* ------------------------------------------------------- */
+/* Home customization #1 */
+.home {
+  display: flex;
+  position: relative;
+  height: 80%;
+  color: white;
+}
+
+.home-image {
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+.first-presentation {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.first-presentation p {
+  text-align: center;
+}
+
+.my-name {
+  display: inline;
+  font-size: 25px;
+  font-weight: 600;
+  font-style: normal;
+}
+/* ------------------------------------------------------- */
+/* Scrollbar customization   #1 */
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: .30rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #009682;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: .30rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FAF0E6;
+}
+/* ------------------------------------------------------- */
+/* About me customization #1 */
+article {
+  display: block;
+  margin: 20px 5px 20px 5px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 10px 10px 10px;
+  background-color: #009682;
+}
+
+.me-photo {
+  float:left;
+  width: 200px;
+  height: 200px;
+  margin: 0 5px 0 0;
+  padding: 0;
+  border-radius: 125px;
+  border: 2px solid white;
+}
+
+.presentation-section {
+  margin-right: 5px;
+}
+
+article span, .quote {
+  font-style: italic;
+  font-size: 20px;
+}
+/* ------------------------------------------------------- */
+/* Portfolio customization #1 */
+.portfolio {
+  margin-top: 10px 5px 10px 5px;
+  width:100%;
+  border-radius: .30rem;
+}
+/* ------------------------------------------------------- */
+/* Contact customization #1 */
+#contact {
+  width: 100%;
+}
+
+footer{
+  background-color: #FAF0E6;
+  font-family: "Source Serif Pro";
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 15px;
+  margin: 10px 10px 10px 10px;
+}
+
+nav {
+  margin: 5px 0 5px 0;
+  color: #009682;
+  display: block;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.email {
+  padding: 0 0 10px 10px;
+}
+/* -------------------------------------------------------- */
+@media only screen and (min-width:1300px) {
+  /* Menu customization #2 */
+  header {
+    height: 100%;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  /* ------------------------------------------------------ */
+  /* Home customization #2 */
+  .first-presentation {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-size: 30px;
+  }
+
+  .my-name {
+    font-size: 50px;
+  }
+  /* ------------------------------------------------------- */
+  /* About me customization #2 */
+  .about-me {
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    align-items: center;
+  }
+
+  article {
+    margin: 0 20px 0 20px;
+    font-size: 20px;
+  }
+
+  .me-photo {
+    width: 300px;
+    height: 300px;
+    margin: 0 20px 0 0;
+    border-radius: 200px;
+  }
+
+  .presentation-section {
+    margin: 20px 10px 0 0;
+  }
+
+  article span, .quote {
+    font-size:25px;
+  }
+  /* ------------------------------------------------------- */
+  /* Portfolio customization #2 */
+  .portfolio {
+    margin-top: 10px 10px 10px 10px;
+
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    align-items: center;
+  }
+  /* ------------------------------------------------------- */
+  /* Contact customization #2 */
+  footer{
+    font-size: 18px;
+  }
+
+  nav {
+    display: flex;
+    margin: 25px 0 20px 0;
+    justify-content: space-between;
+  }
+
+  .icons {
+    width: 50px;
+    height: 50px;
+  }
+
+  .email {
+    margin-top: 15px;
+  }
+
+  .fb-icon {
+    margin-left: 50px;
+  }
+
+  .ig-icon {
+    margin-left: 30px;
+  }
+
+  .tw-icon {
+    margin-left: 30px;
+  }
+  /* ------------------------------------------------------- */
+}
+/* --------------------------------------------------------- */
+@media only screen and (min-width: 600px) and (max-width: 1299px) {
+  /* Menu customization #3 */
+  header {
+    font-size: 15px;
+  }
+  /* ------------------------------------------------------- */
+  /* Home customization #3 */
+  .first-presentation {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    font-size: 25px;
+  }
+
+  .my-name {
+    font-size: 40px;
+  }
+  /* ------------------------------------------------------- */
+  /* About me customization #3 */
+  .about-me {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+  }
+
+  article {
+    font-size: 18px;
+  }
+
+  .me-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 167px;
+  }
+
+  article span, .quote {
+    font-size:23px;
+  }
+  /* ------------------------------------------------------- */
+  /* Portfolio customization #3 */
+  .portfolio {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+  }
+  /* ------------------------------------------------------- */
+  /* Contact customization #3 */
+  footer{
+    font-size: 16px;
+  }
+
+  nav {
+    display: flex;
+    margin: 25px 0 20px 0;
+    justify-content: space-between;
+  }
+
+  .email {
+    margin-top: 15px;
+  }
+
+  .fb-icon {
+    margin-left: 20px;
+  }
+
+  .ig-icon {
+    margin-left: 20px;
+  }
+
+  .tw-icon {
+    margin-left: 20px;
+  }
+  /* ------------------------------------------------------- */
+}
